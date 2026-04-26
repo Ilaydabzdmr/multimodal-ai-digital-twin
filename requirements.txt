@@ -1,0 +1,45 @@
+# Health Coach FastAPI Application Dependencies
+# This file contains all Python dependencies for the project
+# Required libraries for fetching data from real data sources (USDA, FDA, DrugBank)
+
+# === FastAPI and Web Framework ===
+fastapi==0.115.0              # Modern, fast web framework (API development)
+uvicorn==0.30.6               # ASGI server (to run FastAPI)
+pydantic==2.9.2               # Data validation and modeling
+python-dotenv==1.0.1          # Environment variables management
+
+# === Data Processing and Analysis ===
+pandas==2.2.2                 # Data analysis and manipulation
+numpy>=1.24.0,<2.0.0          # Numerical calculations (pandas dependency)
+scikit-learn==1.4.2           # Machine learning algorithms
+networkx==3.3                 # Graph data structures (for GraphRAG)
+
+# === HTTP and API Requests ===
+requests==2.32.3              # HTTP requests (for USDA, FDA APIs)
+httpx==0.27.0                 # Async HTTP client
+beautifulsoup4==4.12.3        # HTML parsing (for web scraping)
+
+# === Database and Cache ===
+redis==5.0.8                  # In-memory cache (fast data access)
+psycopg==3.2.1                # PostgreSQL adapter
+minio==7.2.7                  # Object storage (file storage)
+
+# === AI and ML ===
+google-generativeai==0.7.2    # Google Gemini AI (for intent routing)
+
+# === Image Processing ===
+Pillow==10.4.0                # Image processing (for vision agent)
+
+# === Form and File Upload ===
+python-multipart==0.0.6       # Form data handling (for FastAPI)
+
+# === Testing and Development ===
+pytest==8.2.2                 # Unit testing framework
+pytest-asyncio==0.23.6        # Async test support
+
+# === Security and Encryption ===
+cryptography==41.0.7          # Secure data encryption
+
+# === Logging and Monitoring ===
+structlog==23.2.0             # Structured logging
+
